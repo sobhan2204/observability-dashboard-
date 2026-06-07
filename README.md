@@ -1,6 +1,6 @@
 # Node.js Prometheus Monitoring System
 
-![Monitoring Architecture]({80363074-BE3F-40FB-AC77-ED4485E591FC}.png)
+![Monitoring Architecture](assets/architecture.png)
 
 ## Overview
 This project is a Node.js application integrated with **Prometheus** and **Grafana** for real-time monitoring and metrics visualization. It demonstrates how to collect application-level metrics (like request counts and execution times) and system-level metrics (using Node Exporter) to gain insights into service performance.
