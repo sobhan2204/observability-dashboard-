@@ -1,0 +1,13 @@
+Promethesus server always run at the port 9090
+
+OVERVIEW - we are getting all the data of system at endpoint /metrics and the prometheus is scrapping that data from that endpoint every 4 secs and then grafana is 
+helping it visulaiuze the data  
+
+// WE CAN NEVER PUT THE ADREE FOR Promethesus AS LOCALHOST ADRESS AS WE WILL USE DOCKER 
+
+1-> MAKE prometheus-config.yml file which will have the details(time to scare , the endpoint with ip not local adress)
+2 -> make docker-compose files becuase the prometheus will be runned as a docker image were out prometheus-config will be monuted
+3 -> run docker compose up(to run prometheus and expose it's port to 9090)
+4 -> then we will run docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss becuase it is an open source docker image 
+5 -> grafana will be exposed to port 3000 and then we will connect grafant to prometheus to extarct data and then make metrics based on the data orn 
+evaluation creteria we need 
